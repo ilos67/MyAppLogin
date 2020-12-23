@@ -4,7 +4,8 @@ import { LayoutComponent } from './layout.component';
 import { OverviewComponent } from './overview.component';
 import { SubnavComponent } from './subnav.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { AdminRoutingModule } from './admin-routing.module'
+import { AdminRoutes } from './admin-routing.module'
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -12,7 +13,7 @@ import { AdminRoutingModule } from './admin-routing.module'
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    AdminRoutingModule
+    RouterModule.forChild(AdminRoutes)
   ]
 })
 export class AdminModule { }

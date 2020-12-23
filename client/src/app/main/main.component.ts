@@ -49,7 +49,8 @@ export class MainComponent implements OnInit, OnDestroy{
 	private _routerEventsSubscription  : Subscription;
 	private _router                    : Subscription;
 	@ViewChild('sidenav',{static : true}) sidenav;
-
+	account = this.accountService.accountValue;
+	
 	sideBarFilterClass : any = [
 		{
 			sideBarSelect  :"sidebar-color-1",
@@ -135,7 +136,7 @@ export class MainComponent implements OnInit, OnDestroy{
 					private pageTitleService: PageTitleService,
 					public translate: TranslateService,
 					private router: Router,
-					private authService : AuthService,
+					private accountService : AuthService,
 					public coreService : CoreService,
 					private routes :Router,
 					private activatedRoute: ActivatedRoute ) {
@@ -214,11 +215,11 @@ export class MainComponent implements OnInit, OnDestroy{
 		breadcrumbService.addFriendlyNameForRoute('/users', 'Users');
 		breadcrumbService.addFriendlyNameForRoute('/users/userprofile', 'User Profile');
 		breadcrumbService.addFriendlyNameForRoute('/users/userlist', 'User List');
-		breadcrumbService.addFriendlyNameForRoute('/session', 'Session');
-		breadcrumbService.addFriendlyNameForRoute('/session/login', 'Login');
-		breadcrumbService.addFriendlyNameForRoute('/session/register', 'Register');
-		breadcrumbService.addFriendlyNameForRoute('/session/forgot-password', 'Forgot');
-		breadcrumbService.addFriendlyNameForRoute('/session/lockscreen', 'Lock Screen');
+		breadcrumbService.addFriendlyNameForRoute('/account', 'Session');
+		breadcrumbService.addFriendlyNameForRoute('/account/login', 'Login');
+		breadcrumbService.addFriendlyNameForRoute('/account/register', 'Register');
+		breadcrumbService.addFriendlyNameForRoute('/account/forgot-password', 'Forgot');
+		breadcrumbService.addFriendlyNameForRoute('/account/lockscreen', 'Lock Screen');
 		breadcrumbService.addFriendlyNameForRoute('/courses', 'Courses');
 		breadcrumbService.addFriendlyNameForRoute('/dashboard/courses', 'Courses');
 		breadcrumbService.addFriendlyNameForRoute('/courses/courses-list', 'Courses List');

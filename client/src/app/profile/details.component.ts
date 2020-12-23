@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from 'app/service/auth-service/auth.service';
 
 @Component({
   selector: 'ms-details',

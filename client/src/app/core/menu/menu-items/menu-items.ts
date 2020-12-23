@@ -26,23 +26,36 @@ const MENUITEMS = [
       {state: 'saas', name: 'SAAS'} 
     ]
   },
+  // {
+  //   state: 'session',
+  //   name: 'SESSIONS',
+  //   type: 'sub',
+  //   icon: 'face',
+  //   label : 'New',
+  //   children: [
+  //     {state: 'login', name: 'LOGIN'},
+  //     {state: 'loginV2', name: 'LOGIN V2',label: 'New'},
+  //     {state: 'register', name: 'REGISTER'},
+  //     {state: 'registerV2', name: 'REGISTER V2',label: 'New'},
+  //     {state: 'forgot-password', name: 'FORGOT'},
+  //     {state: 'forgot-passwordV2', name: 'FORGOT V2',label: 'New'},
+  //     {state: 'lockscreen', name: 'LOCKSCREEN'},
+  //     {state: 'lockscreenV2', name: 'LOCKSCREEN V2',label: 'New'}
+  //   ]
+  // }
   {
-    state: 'session',
-    name: 'SESSIONS',
-    type: 'sub',
-    icon: 'face',
-    label : 'New',
-    children: [
-      {state: 'login', name: 'LOGIN'},
-      {state: 'loginV2', name: 'LOGIN V2',label: 'New'},
-      {state: 'register', name: 'REGISTER'},
-      {state: 'registerV2', name: 'REGISTER V2',label: 'New'},
-      {state: 'forgot-password', name: 'FORGOT'},
-      {state: 'forgot-passwordV2', name: 'FORGOT V2',label: 'New'},
-      {state: 'lockscreen', name: 'LOCKSCREEN'},
-      {state: 'lockscreenV2', name: 'LOCKSCREEN V2',label: 'New'}
-    ]
-  }
+    state: 'profile',
+    name: 'Profile',
+    type: 'link',
+    label:'New',
+    icon: 'explore'
+  },
+  {
+    state: 'admin',
+    name: 'Admin',
+    type: 'link',
+    icon: 'videocam'
+  },
 ];
 
 @Injectable()

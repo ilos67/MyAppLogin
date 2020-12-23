@@ -335,7 +335,7 @@
 </div>
 <mat-menu class="user-menu" x-position="before" y-position="below" #menu="matMenu">
    <button mat-menu-item>
-      <mat-icon>account_circle</mat-icon>
+      <mat-icon routerLink="/profile">account_circle</mat-icon>
       <span>{{'Profile'|translate}}</span>
    </button>
    <button mat-menu-item>
@@ -370,3 +370,9 @@
       <span>{{'2 Feedback'|translate}}</span>
    </button>
 </mat-menu>
+<div class="p-4">
+   <div class="container">
+       <h1>Hi {{account.firstName}}!</h1>
+       <p>You're logged in with Angular 10 & JWT!!</p>
+   </div>
+</div>

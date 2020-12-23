@@ -29,7 +29,7 @@ export class RegisterComponent {
 
     ngOnInit() {
         this.form = this.formBuilder.group({
-            title: ['', Validators.required],
+            title: ['Miss', Validators.required],
             firstName: ['', Validators.required],
             lastName: ['', Validators.required],
             email: ['', [Validators.required, Validators.email]],

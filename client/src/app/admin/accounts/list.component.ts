@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { first } from 'rxjs/operators';
+import { AuthService } from '../../service/auth-service/auth.service';
+import { Account } from '../../_models/account';
 
 @Component({
   selector: 'ms-list',
   templateUrl: './list.component.html',
-  styleUrls: ['./list.component.scss']
+  styleUrls:['./list.component.scss']
 })
 export class ListComponent implements OnInit {
   accounts: any[];
